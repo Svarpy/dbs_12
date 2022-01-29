@@ -1,0 +1,11 @@
+--Show Orders
+SELECT * FROM stocks
+
+--Show Orders with specific date
+SELECT * FROM stocks
+WHERE stock_name='%s' and order_date BETWEEN '2022/01/28' AND '2022/01/29 23:59:59'
+
+--Place Orders
+INSERT INTO stocks(stock_name,order_type,price,order_qty) values(%s,%s,%f,%d)
+
+INSERT INTO stocks(stock_name,order_type,price,order_qty) values('DMart','Market',4000.52,3)
